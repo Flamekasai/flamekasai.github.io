@@ -1,4 +1,4 @@
-/* Basic styles to remove padding and margin and do box-sizing */
+/* Basic styles to remove padding and margin and do box-sizing {{{1*/
 *
 {
     -webkit-box-sizing: border-box;
@@ -10,4 +10,65 @@
 html, body {
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
+
+    background-color: var(--white-color);
+    font-size: 16px;
+    font-family: monospace;
+}
+
+/* Site styles {{{1*/
+/* Header {{{2*/
+.header {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-width: 400px;
+    min-height: 450px;
+    height: 100%;
+
+    padding: 16px;
+
+    color: white;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        var(--header-img);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    font-size: 9rem;
+    line-height: 8rem;
+}
+
+.header ion-icon {
+    margin: 0px auto;
+    font-size: 4rem;
+}
+
+.color-accent {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 599px) {
+    .header h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+
+/* Variables {{{1*/
+:root {
+    --header-img: url("https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    --accent-color: #ff7600;
+    --black-color: #000000;
+    --darkgray-color: #333333;
+    --gray-color: #666666;
+    --lightgray-color: #999999;
+    --lightgray2-color: #cccccc;
+    --white-color: #eeeeee;
 }
