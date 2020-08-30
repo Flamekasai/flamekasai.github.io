@@ -110,6 +110,10 @@ html, body {
 .card_container ul {
     list-style: none;
 }
+
+.card_container p {
+    padding: 6px;
+}
 /*}}}*/
 
 .text-accent {
