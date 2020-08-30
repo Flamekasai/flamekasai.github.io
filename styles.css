@@ -73,11 +73,7 @@ html, body {
     color: var(--white-color);
 }
 
-/*}}}*/
-.text-accent {
-    color: var(--accent-color);
-}
-
+/* Card styles {{{2*/
 .card {
     display: inline-block;
     width: 247px;
@@ -114,12 +110,24 @@ html, body {
 .card_container ul {
     list-style: none;
 }
+/*}}}*/
 
-/* Media queries {{{2*/
+.text-accent {
+    color: var(--accent-color);
+}
+
+/* Media queries {{{1*/
 @media screen and (max-width: 599px) {
     .header h1 {
         font-size: 4rem;
         line-height: 4rem;
+    }
+
+    .section_cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
