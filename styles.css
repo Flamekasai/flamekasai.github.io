@@ -128,6 +128,7 @@ html, body {
 .footer {
     padding: 16px;
     font-size: 1.1rem;
+    text-align: center;
 
     color: var(--white-color);
     background-color: var(--darkgray-color);
@@ -145,6 +146,10 @@ html, body {
 .footer a {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--accent-color);
 }
 
 .icon-only {
