@@ -53,13 +53,12 @@ html, body {
 /*}}}*/
 /* Sections {{{2*/
 .section {
-    text-align: center;
-    padding: 3.5rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
 }
 
-.section_text {
-    padding: 3.5rem;
+.section h1 {
+    padding: 16px;
 }
 
 .section_cards {
@@ -77,7 +76,8 @@ html, body {
 .card {
     position: relative;
     display: inline-block;
-    width: 247px;
+    min-width: 370px;
+    width: 33%;
     margin: 16px;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
@@ -94,27 +94,38 @@ html, body {
     transform: scale(1.1);
 }
 
+.card_image {
+    text-align: center;
+}
+
+.card h4 {
+    margin: 0px 16px;
+    padding: 10px;
+    font-size: 1.16rem;
+
+    border-bottom: solid 2px var(--accent-color);
+}
+
 .card_container {
     text-align: left;
     padding: 16px;
     font-size: 1.0rem;
 }
 
-.card_container h4 {
-    font-size: 1.16rem;
-}
-
-.card_container hr {
-    margin: 5px 0px;
-    border-color: var(--accent-color);
+.card_container .nested {
+    padding: 5px 10px;
 }
 
 .card_container ul {
     list-style: none;
 }
 
+.card_container li:before {
+    content: "- ";
+}
+
 .card_container p {
-    padding: 6px;
+    max-width: 60ch;
 }
 
 .invisible-link {
@@ -144,40 +155,52 @@ html, body {
     display: block;
 }
 
-.footer a {
-    color: var(--white-color);
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: var(--accent-color);
-}
-
 .icon-only {
     padding: 16px;
 }
 
-/*}}}*/
-
+/* General {{{2*/
 .text-accent {
     color: var(--accent-color);
 }
 
-/* Media queries {{{1*/
-@media screen and (max-width: 599px) {
-    .header h1 {
-        font-size: 4rem;
-        line-height: 4rem;
-    }
+a {
+    color: inherit;
 
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: 0.2s all;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+/*}}}*/
+/* Media queries {{{1*/
+@media screen and (max-width: 850px) {
     .section_cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
 
+    .card {
+        width: 80%;
+    }
+
+    .section {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 599px) {
+    .header h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+}
 /* Variables {{{1*/
 :root {
     --header-img: url("img/header.jpeg");
