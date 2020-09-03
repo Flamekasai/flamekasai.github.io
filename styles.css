@@ -90,7 +90,7 @@ html, body {
     transition: 0.3s all;
 }
 .expand:hover {
-    margin: 16px 16px;
+    margin: 3rem;
 
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.5);
 
