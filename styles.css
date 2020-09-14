@@ -1,25 +1,32 @@
-/* Basic styles to remove padding and margin and do box-sizing {{{1*/
-*
-{
+/* Variables */
+:root {
+    --clr-accent: #ff7600;
+    --clr-darkgray: #333333;
+    --clr-white: #eeeeee;
+}
+
+/* Basic styles to remove padding and margin and do box-sizing */
+* {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html, body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 
     flex-shrink: 0;
-    background-color: var(--white-color);
+    background-color: var(--clr-white);
     font-size: 100%;
     font-family: monospace;
 }
 
-/* Site styles {{{1*/
-/* Header {{{2*/
+/* Site styles */
+/* Header */
 .header {
     display: grid;
     grid-template-rows: 90% 10%;
@@ -34,7 +41,7 @@ html, body {
     color: white;
     background-image:
         linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-        var(--header-img);
+        url("img/header.jpeg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -48,8 +55,7 @@ html, body {
     margin: 0px auto;
     font-size: 4rem;
 }
-/*}}}*/
-/* Sections {{{2*/
+/* Sections */
 .section {
     padding: 1.5rem;
     font-size: 1.5rem;
@@ -67,11 +73,11 @@ html, body {
 }
 
 .section_black {
-    background-color: var(--darkgray-color);
-    color: var(--white-color);
+    background-color: var(--clr-darkgray);
+    color: var(--clr-white);
 }
 
-/* Card styles {{{2*/
+/* Card styles */
 .card {
     position: relative;
     display: inline-block;
@@ -110,7 +116,7 @@ html, body {
     font-size: 1.8rem;
 
     text-align: left;
-    border-bottom: solid 2px var(--accent-color);
+    border-bottom: solid 2px var(--clr-accent);
 }
 
 .card_container {
@@ -143,14 +149,14 @@ html, body {
     z-index: 1;
 }
 
-/* Footer {{{2*/
+/* Footer */
 .footer {
     padding: 16px;
     font-size: 1.2rem;
     text-align: center;
 
-    color: var(--white-color);
-    background-color: var(--darkgray-color);
+    color: var(--clr-white);
+    background-color: var(--clr-darkgray);
 }
 
 .footer>a>ion-icon {
@@ -166,9 +172,9 @@ html, body {
     padding: 16px;
 }
 
-/* General {{{2*/
+/* General */
 .text-accent {
-    color: var(--accent-color);
+    color: var(--clr-accent);
 }
 
 a {
@@ -181,13 +187,9 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--clr-accent);
 }
-/*}}}*/
-/* Media queries {{{1*/
-@media screen and (max-width: 2000px) {
-}
-
+/* Media queries */
 @media screen and (max-width: 1000px) {
     .section_cards {
         display: flex;
@@ -212,6 +214,10 @@ a:hover {
         line-height: 4rem;
     }
 
+    .header ion-icon {
+        margin-bottom: 1em;
+    }
+
     .card_container {
         font-size: 1rem;
     }
@@ -219,16 +225,4 @@ a:hover {
     .card_container .nested {
         padding: 0.5rem 0.5rem;
     };
-}
-
-/* Variables {{{1*/
-:root {
-    --header-img: url("img/header.jpeg");
-    --accent-color: #ff7600;
-    --black-color: #000000;
-    --darkgray-color: #333333;
-    --gray-color: #666666;
-    --lightgray-color: #999999;
-    --lightgray2-color: #cccccc;
-    --white-color: #eeeeee;
 }
