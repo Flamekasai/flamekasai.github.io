@@ -52,7 +52,7 @@ html, body {
 }
 
 .header ion-icon {
-    margin: 0px auto;
+    margin: 0 auto 4em;
     font-size: 4rem;
 }
 /* Sections */
@@ -212,10 +212,6 @@ a:hover {
     .header h1 {
         font-size: 4rem;
         line-height: 4rem;
-    }
-
-    .header ion-icon {
-        margin-bottom: 1em;
     }
 
     .card_container {
