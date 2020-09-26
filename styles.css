@@ -1,11 +1,12 @@
-/* Variables */
+/* =========
+   Variables
+   ========= */
 :root {
     --clr-accent: #ff7600;
     --clr-darkgray: #333333;
     --clr-white: #eeeeee;
 }
 
-/* Basic styles to remove padding and margin and do box-sizing */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -25,8 +26,9 @@ html, body {
     font-family: monospace;
 }
 
-/* Site styles */
-/* Header */
+/* ======
+   Layout
+   ====== */
 .header {
     display: grid;
     grid-template-rows: 90% 10%;
@@ -55,7 +57,7 @@ html, body {
     margin: 0 auto 4em;
     font-size: 4rem;
 }
-/* Sections */
+
 .section {
     padding: 1.5rem;
     font-size: 1.5rem;
@@ -77,7 +79,27 @@ html, body {
     color: var(--clr-white);
 }
 
-/* Card styles */
+.footer {
+    padding: 16px;
+    font-size: 1.2rem;
+    text-align: center;
+
+    color: var(--clr-white);
+    background-color: var(--clr-darkgray);
+}
+
+.footer>a>ion-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer_mails {
+    display: block;
+}
+
+/* ==========
+   Components
+   ========== */
 .card {
     position: relative;
     display: inline-block;
@@ -92,7 +114,8 @@ html, body {
 .expand {
     transition: 0.3s all;
 }
-.expand:hover {
+.expand:hover,
+.expand:focus {
     margin: 3rem;
 
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.5);
@@ -112,7 +135,6 @@ html, body {
 
 .card h4 {
     margin: 0 1rem;
-    padding: 1rem;
     font-size: 1.8rem;
 
     text-align: left;
@@ -121,10 +143,11 @@ html, body {
 
 .card_container {
     text-align: left;
-    padding: 1rem;
     font-size: 1.4rem;
 }
 
+.card h4,
+.card_container,
 .card_container .nested {
     padding: 1rem;
 }
@@ -149,30 +172,13 @@ html, body {
     z-index: 1;
 }
 
-/* Footer */
-.footer {
-    padding: 16px;
-    font-size: 1.2rem;
-    text-align: center;
-
-    color: var(--clr-white);
-    background-color: var(--clr-darkgray);
-}
-
-.footer>a>ion-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-.footer_mails {
-    display: block;
-}
-
 .icon-only {
     padding: 16px;
 }
 
-/* General */
+/* ==========
+   Typography
+   ========== */
 .text-accent {
     color: var(--clr-accent);
 }
@@ -186,10 +192,14 @@ a {
     transition: 0.2s all;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: var(--clr-accent);
 }
-/* Media queries */
+
+/* =============
+   Media queries
+   ============= */
 @media screen and (max-width: 1000px) {
     .section_cards {
         display: flex;
