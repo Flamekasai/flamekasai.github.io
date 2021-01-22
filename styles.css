@@ -25,7 +25,6 @@ html, body {
     font-family: monospace;
 }
 
-/* Site styles */
 /* Header */
 .header {
     display: grid;
@@ -55,6 +54,7 @@ html, body {
     margin: 0 auto 4em;
     font-size: 4rem;
 }
+
 /* Sections */
 .section {
     padding: 1.5rem;
@@ -69,7 +69,6 @@ html, body {
 .section_cards {
     display: flex;
     justify-content: center;
-    align-items: top;
 }
 
 .section_black {
@@ -189,6 +188,7 @@ a {
 a:hover {
     color: var(--clr-accent);
 }
+
 /* Media queries */
 @media screen and (max-width: 1000px) {
     .section_cards {
