@@ -159,9 +159,14 @@ nav a:hover, nav a:focus-visible {
     margin: 1em auto;
 }
 
-#intro svg {
+#intro #arrow-link {
+    display: block;
     position: absolute;
     bottom: 2em;
+    text-align: center;
+}
+
+#intro svg {
     width: 4em;
     height: 4em;
     animation-name: levitate;
