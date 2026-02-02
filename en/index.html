@@ -1,467 +1,341 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
         <head>
-            <title>Adrian's website</title>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link type="text/css" href="../resources/styles.css" rel="stylesheet"/>
+            <title>Adrian Ruiz Garcia's portfolio</title>
+            <meta charset="utf-8" />
+            <meta name="description" content="
+            Adrian Ruiz Garcia's portfolio showcases his expertise as a
+            software engineer and game developer, featuring details about
+            his skills, work experience, and technologies in diverse fields
+            such as web development, game development, low-level
+            programming, compilers, and more.
+        " />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="../styles.css" />
         </head>
         <body>
-            <header>
-                <nav>
-                    <div id="language-list">
-                        
-        <a href="../en/index.html">
-            <img src="../resources/en-flag.svg" width="32" height="32">
-        </a>
-        
-        <a href="../es/index.html">
-            <img src="../resources/es-flag.svg" width="32" height="32">
-        </a>
-        
-                    </div>
-                    <a id="nav_intro" href="#intro">Home</a>
-                    <a id="nav_aboutme" href="#aboutme">About me</a>
-                    <a id="nav_tech" href="#skills">Skills and Technologies</a>
-                    <a id="nav_projects" href="#projects">Projects</a>
-                    <a id="nav_contact" href="#contact">Contact</a>
-                </nav>
-            </header>
-            
-    <section id="intro">
-        <div>
-            <h1 id="intro-title">Adrián Ruiz</h1>
-            <h2 id="intro-subtitle">Software Engineer & Game developer</h1>
-        </div>
-        <a id="arrow-link" href="#aboutme">
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-        <p id="intro-bgcredits">
-            <span>Photo by la Mare</span>
-            <br>
-            <a href="https://www.pexels.com/photo/aerial-view-of-city-buildings-3461070/">www.pexels.com</a>
+            <div id="language-selector">
+                <a id="selected-language" href="../en/index.html">english</a>
+<span class="language-middot">&middot</span> <a href="../es/index.html">español</a>
+            </section>
+            <section id="intro">
+                <img src="../resources/profile.jpg" />
+                <h1>
+                    Hi, I'm
+                    <span class="text-accent">Adrian</span>
+                </h1>
+                <p>
+            A <span class="text-accent">software engineer</span>
+            and <span class="text-accent">game developer</span>
+            who loves the carefull, from scratch, high quality craft of code.
         </p>
-    </section>
-    
-            
-    <section id=aboutme>
-        
-    <h1 id="aboutme-title">About me</h1>
-    
-                <p>
-                I'm a <span class="text-accent">software engineer</span>
-                and <span class="text-accent">game developer</span> from
-                Spain. I began coding for the first time when I was
-                around 11. At that moment, I knew I had found one of my
-                3 passions in life.
-                </p>
-                <p>
-                Since then, I have learned a lot of different languages
-                and technologies, took part in a lot of interesting
-                projects, and I've met a lot of amazing people on the
-                way.
-                </p>
-            
-    
-    </section>
-    
-            
-    <section id=skills>
-        
-    <h1 id="skills-title">Skills and Technologies</h1>
-    <div id="skills-list">
-        
-        <article class="card">
-            <h2 id="languages">Languages</h2>
-            
-                <span id="skill-C" class="tag">C</span>
-                
-                <span id="skill-C++" class="tag">C++</span>
-                
-                <span id="skill-Java" class="tag">Java</span>
-                
-                <span id="skill-C#" class="tag">C#</span>
-                
-                <span id="skill-Python" class="tag">Python</span>
-                
-                <span id="skill-Javascript" class="tag">Javascript</span>
-                
-                <span id="skill-Typescript" class="tag">Typescript</span>
-                
-                <span id="skill-PHP" class="tag">PHP</span>
-                
-                <span id="skill-Racket" class="tag">Racket</span>
-                
-                <span id="skill-Lisp" class="tag">Lisp</span>
-                
-                <span id="skill-R" class="tag">R</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="web">Web Technologies and Frameworks</h2>
-            
-                <span id="skill-HTML" class="tag">HTML</span>
-                
-                <span id="skill-CSS" class="tag">CSS</span>
-                
-                <span id="skill-Tailwind" class="tag">Tailwind</span>
-                
-                <span id="skill-Bootstrap" class="tag">Bootstrap</span>
-                
-                <span id="skill-SCSS" class="tag">SCSS</span>
-                
-                <span id="skill-NodeJS" class="tag">NodeJS</span>
-                
-                <span id="skill-Angular" class="tag">Angular</span>
-                
-                <span id="skill-Ionic" class="tag">Ionic</span>
-                
-                <span id="skill-React" class="tag">React</span>
-                
-                <span id="skill-Laravel" class="tag">Laravel</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="gamedev">Game Development</h2>
-            
-                <span id="skill-Unreal engine" class="tag">Unreal engine</span>
-                
-                <span id="skill-Raylib" class="tag">Raylib</span>
-                
-                <span id="skill-SFML" class="tag">SFML</span>
-                
-                <span id="skill-OpenGL (WIP)" class="tag">OpenGL (WIP)</span>
-                
-                <span id="skill-CPCTelera" class="tag">CPCTelera</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="ai">Artificial Inteligence</h2>
-            
-                <span id="skill-Keras" class="tag">Keras</span>
-                
-                <span id="skill-Tensorflow" class="tag">Tensorflow</span>
-                
-                <span id="skill-PyTorch" class="tag">PyTorch</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="others">Others</h2>
-            
-                <span id="skill-SQL" class="tag">SQL</span>
-                
-                <span id="skill-MongoDB" class="tag">MongoDB</span>
-                
-                <span id="skill-Firebase" class="tag">Firebase</span>
-                
-                <span id="skill-networking" class="tag">networking</span>
-                
-                <span id="skill-Kafka" class="tag">Kafka</span>
-                
-                <span id="skill-testing" class="tag">testing</span>
-                
-                <span id="skill-Git" class="tag">Git</span>
-                
-                <span id="skill-TFS" class="tag">TFS</span>
-                
-        </article>
-        
-    </div>
-    
-    </section>
-    
-            
-    <section id=projects>
-        
-    <h1 id="projects-title">Projects</h1>
-    <div id="projects-list">
-        
-    <article id="rolgrama" class="project card">
-        <img src="../resources/projects/missing.png">
-        <div class="project-content">
-            <h2 class="project-title">Rolgrama</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Ionic</span>
-                
-                    <span class="tag">Angular</span>
-                
-                    <span class="tag">Firebase</span>
-                
-                    <span class="tag">Node</span>
-                
-            </div>
-            
-                    <p>
-                    Rolgrama is a role-playing campaign manager where
-                    you can save information about all your tabletop rpg
-                    campaigns and characters.
-                    </p>
-
-                    <p>
-                    When you participate in a
-                    campaign you have your character sheet screen where
-                    you can view, add and remove information about your
-                    own character.
-                    </p>
-
-                    <p>
-                    You can also view the shared screen where the game
-                    master (user who created the campaign) can add and
-                    remove information visible to all players.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="flamingo" class="project card">
-        <img src="../resources/projects/flamingo.png">
-        <div class="project-content">
-            <h2 class="project-title">Flamingo</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">C#</span>
-                
-                    <span class="tag">ASP.NET</span>
-                
-                    <span class="tag">SQL</span>
-                
-                    <span class="tag">Bootsrap</span>
-                
-            </div>
-            
-                    <p>
-                    Flamingo is a social media app similar to Twitter,
-                    where users can post text and images and follow
-                    other people.
-                    </p>
-
-                    <p>
-                    There are hashtags that can be added to posts or
-                    followed so you can keep up with the latest news
-                    about your interests.
-                    </p>
-
-                    <p>
-                    It was developed by a team of 5 people where I did
-                    most of the frontend, database administration and
-                    user authentication and authorization.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="sdapp" class="project card">
-        <img src="../resources/projects/sdapp.png">
-        <div class="project-content">
-            <h2 class="project-title">TermMMO</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Python</span>
-                
-                    <span class="tag">Kafka</span>
-                
-                    <span class="tag">Javascript</span>
-                
-                    <span class="tag">SQL</span>
-                
-                    <span class="tag">NodeJS</span>
-                
-            </div>
-            
-                    <p>
-                    A distributed terminal-based MMO where players fight
-                    each other to become the only survivor. The game was
-                    written in python for both the client and the
-                    server. They communicate through Kafka queues of
-                    events.
-                    </p>
-
-                    <p>
-                    The authentication is handled via API REST written
-                    in javascript using node in the backend. On top of
-                    that, an open weather API was consulted to generate
-                    weather effects in the game based on real weather
-                    data.
-                    </p>
-
-                    <p>
-                    Players can also expectate through a web view as
-                    shown in the picture.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="uaprojects" class="project card">
-        <img src="../resources/projects/missing.png">
-        <div class="project-content">
-            <h2 class="project-title">UAProjects</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">PHP</span>
-                
-                    <span class="tag">Laravel</span>
-                
-                    <span class="tag">SQL</span>
-                
-                    <span class="tag">Bootsrap</span>
-                
-            </div>
-            
-                    <p>
-                    A project management tool where users can manage
-                    projects, track issues and assign tasks to other
-                    collaborators with different levels of priority.
-                    With user authentication and authorization.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="keymasters" class="project card">
-        <img src="../resources/projects/keymasters.png">
-        <div class="project-content">
-            <h2 class="project-title">Keymaster's Journey</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Retro Virtual Machine</span>
-                
-                    <span class="tag">Z80 Assembly</span>
-                
-                    <span class="tag">CPCtelera</span>
-                
-                    <span class="tag">WinAPE</span>
-                
-            </div>
-            
-                    <p>
-                    A puzzle game made for the Amstrad CPC in 1.5 weeks.
-                    It has different levels where the player has to get
-                    to a key to proceed to the next level while avoiding
-                    enemies.
-                    </p>
-
-                    <p>
-                    The player has to take advantage of terrain
-                    and clever movement to avoid them.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="conquista3D" class="project card">
-        <img src="../resources/projects/conquista3D.png">
-        <div class="project-content">
-            <h2 class="project-title">Conquista3D</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Unreal engine</span>
-                
-                    <span class="tag">Blender</span>
-                
-            </div>
-            
-                    <p>
-                    A remake of the 'takeover' mini game from 'Clubhouse
-                    Games' for NDS with 3D physics and models.
-                    </p>
-
-                    <p>
-                    I made all the programming and the game design with
-                    Alvarin.
-                    </p>
-
-                    <p>
-                    The green, orange and yellow teams models were made
-                    by Sandra.
-                    </p>
-
-                    <p>
-                    The Pink, blue and red models by Sergio.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="pl-transpiler" class="project card">
-        <img src="../resources/projects/missing.png">
-        <div class="project-content">
-            <h2 class="project-title">Transpiler</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">C</span>
-                
-                    <span class="tag">C++</span>
-                
-                    <span class="tag">Bison</span>
-                
-                    <span class="tag">Flex</span>
-                
-            </div>
-            
-                    <p>
-                    A compiler for a fictitious bytecode. The final
-                    version was made with Bison and Flex, while the
-                    first version was written by hand with no external
-                    libraries as a learning exercise.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="learner" class="project card">
-        <img src="../resources/projects/learner.png">
-        <div class="project-content">
-            <h2 class="project-title">Learner</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">C++</span>
-                
-            </div>
-            
-                    <p>
-                    An AI made from scratch in C++ with backtracking and
-                    easy to expand with new functionality.
-                    </p>
-                
-        </div>
-    </article>
-    
-    </div>
-    
-    </section>
-    
-            <footer id="contact">
-                <div id="socials">
-                    <a target="_blank" href="https://www.linkedin.com/in/adrian-ruiz-garcia-050209194/">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="-5.5 0 32 32" version="1.1">
-            <title>linkedin</title>
-            <path d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"/>
-            </svg>
-        </a>
-                    <a target="_blank" href="https://www.github.com/Flamekasai">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 20 20" version="1.1">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
-            <g id="icons" transform="translate(56.000000, 160.000000)">
-            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
-            </g>
-            </g>
-            </g>
-            </svg>
-        </a>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/adrian-ruiz-garcia-050209194/" target="_blank"><svg class="icon-linkedin" fill="#000000" width="800px" height="800px" viewBox="-5.5 0 32 32" version="1.1"> <title>linkedin</title> <path d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"/> </svg></a>
+                    <a href="https://github.com/flamekasai" target="_blank"><svg class="icon-github" width="800px" height="800px" viewBox="-2 -2 24 24" version="1.1"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path> </g> </g> </g> </svg></a>
+                    <a href="mailto:adrianruizgjj@gmail.com" target="_blank"><svg class="icon-email" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                 </div>
-                <a target="_blank" href="mailto:adrianruigjj@gmail.com">adrianruigjj@gmail.com</a>
-                <a target="_blank" href="../resources/curriculum.pdf">résumé (PDF)</a>
+            </section>
+            <section>
+                <h2>Skills and Technologies</h2>
+                <article id="skills">
+                    
+        <div class="skill-category">
+            <h3>languages</h3>
+            <ul>
+            <li>C</li>
+<li>C++</li>
+<li>Java</li>
+<li>C#</li>
+<li>Python</li>
+<li>GDScript</li>
+<li>Javascript</li>
+<li>Typescript</li>
+<li>PHP</li>
+<li>Racket</li>
+<li>Lisp</li>
+<li>R</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>web</h3>
+            <ul>
+            <li>HTML</li>
+<li>CSS</li>
+<li>Tailwind</li>
+<li>Bootstrap</li>
+<li>SCSS</li>
+<li>NodeJS</li>
+<li>Angular</li>
+<li>Ionic</li>
+<li>React</li>
+<li>Laravel</li>
+<li>.NET</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>gamedev</h3>
+            <ul>
+            <li>Unreal engine</li>
+<li>Godot</li>
+<li>Raylib</li>
+<li>SFML</li>
+<li>SDL</li>
+<li>CPCTelera</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>databases</h3>
+            <ul>
+            <li>SQL</li>
+<li>MongoDB</li>
+<li>Firebase</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>ai</h3>
+            <ul>
+            <li>Keras</li>
+<li>Tensorflow</li>
+<li>PyTorch</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>others</h3>
+            <ul>
+            <li>Kafka</li>
+            </ul>
+        </div>
+        
+                </article>
+            </section>
+            <section>
+                <h2>Professional Experience</h2>
+                <article id="jobs">
+                    
+        <div class="card job-entry">
+            <span class="time-period"><time>2024</time> &mdash; <time>present</time></span>
+            <h3>Full-stack Software Engineer <span class="job-middot">&middot</span> <a href="https://www.nttdata.com/global/en/" target="_blank">NTTData</a></h3>
+            
+                <p>
+                I contributed to the creation of applications deployed across
+                multiple platforms serving a large number of clients worldwide.
+                Supporting PC and Mobile native apps integrating cloud
+                components enabling hybrid (online/offline) workflows to achieve
+                high resilience in low connectivity scenarios and locations.
+                </p>
+                <p>
+                I also created internal tools to improve and automate common
+                tasks.
+                </p>
+                <p>
+                    Key contributions:
+                    <ul>
+                        <li>Development of web UIs with industry leading technologies</li>
+                        <li>Development of REST APIs</li>
+                        <li>Development of automated tests (regresion, unit and integration)</li>
+                    </ul>
+                </p>
+                
+        </div>
+        
+                </article>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <article id="projects">
+                    
+        <div class="card">
+            <h3>Keymaster's Journey</h3>
+            <div class="project-tags">
+                <span class="tag">CPCTelera</span>
+            
+
+                <span class="tag">Z80 Assembly</span>
+            
+
+                <span class="tag">CPCTelera</span>
+            
+
+                <span class="tag">WinAPE</span>
+            
+
+                <span class="tag">Retro Virtual Machine</span>
+            </div>
+            <p>
+                Keymaster's Journey is a puzzle game made in assembly for the
+                <strong>Amstrad</strong> PC with a very short amount of time. It
+                has different levels where the player has to get to a key to
+                proceed to the next level while avoiding enemies. Making a full
+                game in assembly was really enjoyable.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Conquista 3D</h3>
+            <div class="project-tags">
+                <span class="tag">Unreal Engine</span>
+            </div>
+            <p>
+                Conquista 3D is a party game made in Unreal as a 3D remake of
+                the minigame 'takeover' from the NDS game 'Clubhouse Games'. All
+                the programming, game design and level design was made by Alvaro
+                and me. The models were made by Sandra and Sergio.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Compiler from scratch</h3>
+            <div class="project-tags">
+                <span class="tag">C</span>
+            
+
+                <span class="tag">C++</span>
+            
+
+                <span class="tag">Bison</span>
+            
+
+                <span class="tag">Flex</span>
+            </div>
+            <p>
+                Developed a compiler for a fictional bytecode. I particularly
+                enjoyed crafting the initial iteration <strong>from
+                scratch</strong>, without external libraries, improving my
+                understanding of core principles and compiler design. The final
+                version, made with Bison and Flex, allowed me to learn
+                industry-standard tools for parsing and lexical analysis.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Terminal Battle Royale</h3>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+            
+
+                <span class="tag">Kafka</span>
+            
+
+                <span class="tag">NodeJS</span>
+            
+
+                <span class="tag">SQL</span>
+            </div>
+            <p>
+                <p>
+                A distributed terminal-based battle royale where players fight
+                each other to become the only survivor. The game was written in
+                python for both the client and the server. They communicate
+                through Kafka queues of events.
+                </p>
+
+                <p>
+                The authentication is handled via API REST written in javascript
+                using node in the backend. On top of that, an open weather API
+                was consulted to generate weather effects in the game based on
+                real weather data.
+                </p>
+
+                <p>
+                Players can also expectate through a website in real time.
+                </p>
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Rolgrama: A System-Agnostic Tabletop RPG Manager</h3>
+            <div class="project-tags">
+                <span class="tag">Ionic</span>
+            
+
+                <span class="tag">Angular</span>
+            
+
+                <span class="tag">Firebase</span>
+            
+
+                <span class="tag">NodeJS</span>
+            </div>
+            <p>
+                D&D (Dungeons & Dragons) is the most played tabletop RPG system
+                in the world. As a consecuence, most digital tools for managing
+                tabletop RPG sessions are designed with D&D in mind despite the
+                wide variety of systems with different strengths and interesting
+                ideas. <strong>Rolgrama</strong> is a tabletop RPG manager that
+                allows users to keep track of advancements, players, characters
+                and GM-player synchronization in a generic, system-agnostic way,
+                allowing players to enjoy their favourite hobby without being
+                limited to one system.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Flamingo: A social media platform</h3>
+            <div class="project-tags">
+                <span class="tag">C#</span>
+            
+
+                <span class="tag">ASP.NET</span>
+            
+
+                <span class="tag">SQL</span>
+            
+
+                <span class="tag">Bootstrap</span>
+            </div>
+            <p>
+                Flamingo is a social media app where you can share text and
+                images and follow friends. Users can also make use of
+                <strong>tags</strong> to follow topics that matter to them. It
+                was developed by a team of 5 people where I did most of the
+                frontend, database administration and user authentication and
+                authorization.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>UAProjects: Task manager and Issue tracker</h3>
+            <div class="project-tags">
+                <span class="tag">PHP</span>
+            
+
+                <span class="tag">Laravel</span>
+            
+
+                <span class="tag">SQL</span>
+            
+
+                <span class="tag">Bootstrap</span>
+            </div>
+            <p>
+                This project management tool enables users to efficiently manage
+                projects, track issues, and assign tasks to collaborators with
+                different levels of priority. With built-in user
+                authentication and authorization, it ensures secure access with
+                role administration.
+            </p>
+        </div>
+        
+                </article>
+            </section>
+            <footer>
+            <a href="#top">Back to top</a>
             </footer>
         </body>
     </html>
-    

@@ -2,38 +2,62 @@
     <!DOCTYPE html>
     <html>
         <head>
-            <title>Adrian's website</title>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Adrian Ruiz Garcia's portfolio</title>
+            <meta charset="utf-8" />
+            <meta name="description" content="
+            Adrian Ruiz Garcia's portfolio showcases his expertise as a
+            software engineer and game developer, featuring details about
+            his skills, work experience, and technologies in diverse fields
+            such as web development, game development, low-level
+            programming, compilers, and more.
+            "/>
+            <meta name="author" content="Adrian Ruiz Garcia"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="styles.css" />
             <style>
-                body {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 4em;
-                    margin: 0;
-                    height: 100svh;
+            body
+            {
+                height: 100vh;
 
-                    background-color: #222;
-                }
-                img {
-                    transition: all 0.2s ease-in-out;
-                    max-width: 100%;
-                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
-                a {
-                    outline: none;
-                    width: 20%;
-                }
+            ul
+            {
+                list-style: none;
+                max-height: 50%;
+                overflow-y: scroll;
+                scrollbar-width: none;
+            }
 
-                a:hover img, a:focus-visible {
-                    transform: scale(1.25);
-                }
+            ul li a
+            {
+                display: block;
+                margin: 0.5em 0em;
+                padding: 0.5em 1em;
+
+                font-size: 2rem;
+                text-transform: capitalize;
+                text-align: center;
+
+                color: var(--clr-accent);
+            }
+
+            #welcome a:hover,
+            #welcome a:focus
+            {
+                background-color: #ffffff11;
+            }
             </style>
         </head>
         <body>
-            <a href="en/index.html"><img src="../resources/en-flag.svg"></a>
-            <a href="es/index.html"><img src="../resources/es-flag.svg"></a>
+        <ul id="welcome">
+            <li><a href="./en/index.html">english</a></li>
+<li><a href="./es/index.html">español</a></li>
+        </ul>
         </body>
     </html>
     

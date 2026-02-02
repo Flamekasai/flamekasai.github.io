@@ -1,472 +1,346 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
         <head>
-            <title>Adrian's website</title>
-            <meta charset="utf-8"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link type="text/css" href="../resources/styles.css" rel="stylesheet"/>
+            <title>Portfolio de Adrián Ruiz García</title>
+            <meta charset="utf-8" />
+            <meta name="description" content="
+            El portfolio de Adrián Ruiz Garcia muestra su experiencia como
+            ingeniero de software y desarrollador de videojuegos. Detalla sus
+            habilidades, experiencia laboral y tecnologías conocidas en diversos
+            campos como el desarrollo web, el desarrollo de videojuegos, la
+            programación a bajo nivel, diseño de compiladores y más.
+        " />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="../styles.css" />
         </head>
         <body>
-            <header>
-                <nav>
-                    <div id="language-list">
-                        
-        <a href="../en/index.html">
-            <img src="../resources/en-flag.svg" width="32" height="32">
-        </a>
-        
-        <a href="../es/index.html">
-            <img src="../resources/es-flag.svg" width="32" height="32">
-        </a>
-        
-                    </div>
-                    <a id="nav_intro" href="#intro">Inicio</a>
-                    <a id="nav_aboutme" href="#aboutme">Sobre mí</a>
-                    <a id="nav_tech" href="#skills">Habilidades y tecnologías</a>
-                    <a id="nav_projects" href="#projects">Proyectos</a>
-                    <a id="nav_contact" href="#contact">Contacto</a>
-                </nav>
-            </header>
-            
-    <section id="intro">
-        <div>
-            <h1 id="intro-title">Adrián Ruiz</h1>
-            <h2 id="intro-subtitle">Ingeniero de software & Desarrollador de videojuegos</h1>
-        </div>
-        <a id="arrow-link" href="#aboutme">
-            <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 10L12 15L17 10" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </a>
-        <p id="intro-bgcredits">
-            <span>Photo by la Mare</span>
-            <br>
-            <a href="https://www.pexels.com/photo/aerial-view-of-city-buildings-3461070/">www.pexels.com</a>
+            <div id="language-selector">
+                <a href="../en/index.html">english</a>
+<span class="language-middot">&middot</span> <a id="selected-language" href="../es/index.html">español</a>
+            </section>
+            <section id="intro">
+                <img src="../resources/profile.jpg" />
+                <h1>
+                    Hola, soy
+                    <span class="text-accent">Adrian</span>
+                </h1>
+                <p>
+            Un <span class="text-accent">ingeniero informático</span> y
+            <span class="text-accent">desarrollador de videojuegos</span> al que
+            le encanta la programación a bajo nivel y el desarrollo de software
+            de calidad.
         </p>
-    </section>
-    
-            
-    <section id=aboutme>
-        
-    <h1 id="aboutme-title">Sobre mí</h1>
-    
-                <p>
-                Soy un <span class="text-accent">ingeniero de
-                software</span> y
-                <span class="text-accent">desarrollador de videojuegos</span>
-                nacido en España. Descubrí la programación por primera
-                vez a los 11 años y supe que había encontrado una de mis
-                3 grandes pasiones.
-                </p>
-                <p>
-                Desde entonces he aprendido muchos lenguajes y
-                tecnologías diferentes, he participado en muchos
-                proyectos interesantes y he conocido a muchas personas
-                increibles por el camino.
-                </p>
-            
-    
-    </section>
-    
-            
-    <section id=skills>
-        
-    <h1 id="skills-title">Habilidades y tecnologías</h1>
-    <div id="skills-list">
-        
-        <article class="card">
-            <h2 id="languages">Lenguajes</h2>
-            
-                <span id="skill-C" class="tag">C</span>
-                
-                <span id="skill-C++" class="tag">C++</span>
-                
-                <span id="skill-Java" class="tag">Java</span>
-                
-                <span id="skill-C#" class="tag">C#</span>
-                
-                <span id="skill-Python" class="tag">Python</span>
-                
-                <span id="skill-Javascript" class="tag">Javascript</span>
-                
-                <span id="skill-Typescript" class="tag">Typescript</span>
-                
-                <span id="skill-PHP" class="tag">PHP</span>
-                
-                <span id="skill-Racket" class="tag">Racket</span>
-                
-                <span id="skill-Lisp" class="tag">Lisp</span>
-                
-                <span id="skill-R" class="tag">R</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="web">Tecnologías y Frameworks Web</h2>
-            
-                <span id="skill-HTML" class="tag">HTML</span>
-                
-                <span id="skill-CSS" class="tag">CSS</span>
-                
-                <span id="skill-Tailwind" class="tag">Tailwind</span>
-                
-                <span id="skill-Bootstrap" class="tag">Bootstrap</span>
-                
-                <span id="skill-SCSS" class="tag">SCSS</span>
-                
-                <span id="skill-NodeJS" class="tag">NodeJS</span>
-                
-                <span id="skill-Angular" class="tag">Angular</span>
-                
-                <span id="skill-Ionic" class="tag">Ionic</span>
-                
-                <span id="skill-React" class="tag">React</span>
-                
-                <span id="skill-Laravel" class="tag">Laravel</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="gamedev">Desarrollo de Videojuegos</h2>
-            
-                <span id="skill-Unreal engine" class="tag">Unreal engine</span>
-                
-                <span id="skill-Raylib" class="tag">Raylib</span>
-                
-                <span id="skill-SFML" class="tag">SFML</span>
-                
-                <span id="skill-OpenGL (WIP)" class="tag">OpenGL (WIP)</span>
-                
-                <span id="skill-CPCTelera" class="tag">CPCTelera</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="ai">Inteligencia Artificial</h2>
-            
-                <span id="skill-Keras" class="tag">Keras</span>
-                
-                <span id="skill-Tensorflow" class="tag">Tensorflow</span>
-                
-                <span id="skill-PyTorch" class="tag">PyTorch</span>
-                
-        </article>
-        
-        <article class="card">
-            <h2 id="others">Otros</h2>
-            
-                <span id="skill-SQL" class="tag">SQL</span>
-                
-                <span id="skill-MongoDB" class="tag">MongoDB</span>
-                
-                <span id="skill-Firebase" class="tag">Firebase</span>
-                
-                <span id="skill-networking" class="tag">networking</span>
-                
-                <span id="skill-Kafka" class="tag">Kafka</span>
-                
-                <span id="skill-testing" class="tag">testing</span>
-                
-                <span id="skill-Git" class="tag">Git</span>
-                
-                <span id="skill-TFS" class="tag">TFS</span>
-                
-        </article>
-        
-    </div>
-    
-    </section>
-    
-            
-    <section id=projects>
-        
-    <h1 id="projects-title">Proyectos</h1>
-    <div id="projects-list">
-        
-    <article id="rolgrama" class="project card">
-        <img src="../resources/projects/missing.png">
-        <div class="project-content">
-            <h2 class="project-title">Rolgrama</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Ionic</span>
-                
-                    <span class="tag">Angular</span>
-                
-                    <span class="tag">Firebase</span>
-                
-                    <span class="tag">Node</span>
-                
-            </div>
-            
-                    <p>
-                    Rolgrama es un gestor de partidas de rol donde
-                    puedes guardar información sobre tus campañas y
-                    personajes.
-                    </p>
-
-                    <p>
-                    Cuando participas en una campaña tienes un apartado
-                    de hoja de personaje donde puedes ver, añadir y
-                    eliminar información sobre tu propio personaje.
-                    </p>
-
-                    <p>
-                    También existe una pantalla común donde el master
-                    (usuario que creó la campaña) puede poner
-                    información que pueden ver todos los jugadores.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="flamingo" class="project card">
-        <img src="../resources/projects/flamingo.png">
-        <div class="project-content">
-            <h2 class="project-title">Flamingo</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">C#</span>
-                
-                    <span class="tag">ASP.NET</span>
-                
-                    <span class="tag">SQL</span>
-                
-                    <span class="tag">Bootsrap</span>
-                
-            </div>
-            
-                    <p>
-                    Flamingo es una red social al estilo de Twitter
-                    donde los usuarios pueden subir textos e imagenes y
-                    seguir a otros usuarios.
-                    </p>
-
-                    <p>
-                    Además puede seguir ciertos hashtags para mantenerse
-                    al día de todos los posts que hablen sobre los temas
-                    que te resulten de interes.
-                    </p>
-
-                    <p>
-                    Fue un proyecto en grupo donde lleve a cabo el
-                    diseño front-end casi por completo además de
-                    administración de la base de datos y la
-                    autenticación y autorización de usuarios.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="sdapp" class="project card">
-        <img src="../resources/projects/sdapp.png">
-        <div class="project-content">
-            <h2 class="project-title">TermMMO</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Python</span>
-                
-                    <span class="tag">Kafka</span>
-                
-                    <span class="tag">Javascript</span>
-                
-                    <span class="tag">SQL</span>
-                
-                    <span class="tag">NodeJS</span>
-                
-            </div>
-            
-                    <p>
-                    Un MMO de terminal distribuido donde los jugadores
-                    luchan entre sí y solo puede sobrevivir uno. El
-                    juego fue escrito en python tanto para el cliente
-                    como el servidor y se comunican mediante colas de
-                    eventos con Kafka.
-                    </p>
-
-                    <p>
-                    La autenticación de los usuarios se gestiona con una
-                    API REST escrita en javascript y con node en el
-                    backend. Además el juego obtenia datos
-                    metereologicos de ciertas ciudades para generar
-                    climas variados durante el juego.
-                    </p>
-
-                    <p>
-                    Otros jugadores también pueden ver las partidas como
-                    espectadores a traves de un navegador web. Como se
-                    puede observar en la imagen.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="uaprojects" class="project card">
-        <img src="../resources/projects/missing.png">
-        <div class="project-content">
-            <h2 class="project-title">UAProjects</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">PHP</span>
-                
-                    <span class="tag">Laravel</span>
-                
-                    <span class="tag">SQL</span>
-                
-                    <span class="tag">Bootsrap</span>
-                
-            </div>
-            
-                    <p>
-                    Una aplicación de gestión de proyectos donde los
-                    usuarios pueden hacer el seguimiento de tareas y
-                    problemas dentro de un proyecto así como asignarles
-                    responsables y prioridades. Con autenticación y
-                    autorización de usuarios.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="keymasters" class="project card">
-        <img src="../resources/projects/keymasters.png">
-        <div class="project-content">
-            <h2 class="project-title">Keymaster's Journey</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Retro Virtual Machine</span>
-                
-                    <span class="tag">Z80 Assembly</span>
-                
-                    <span class="tag">CPCtelera</span>
-                
-                    <span class="tag">WinAPE</span>
-                
-            </div>
-            
-                    <p>
-                    Un pequeño juego de puzzles para el Amstrad CPC en
-                    1 semana y media donde el jugador tiene que llegar
-                    hasta la llave para proceder al siguiente nivel
-                    mientras evita a los enemigos.
-                    </p>
-
-                    <p>
-                    El jugador debe
-                    aprovechar el terreno y moverse de forma inteligente
-                    para evitarlos.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="conquista3D" class="project card">
-        <img src="../resources/projects/conquista3D.png">
-        <div class="project-content">
-            <h2 class="project-title">Conquista3D</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">Unreal engine</span>
-                
-                    <span class="tag">Blender</span>
-                
-            </div>
-            
-                    <p>
-                    Un remake en 3D del minijuego 'conquista' que
-                    aparece en '42 Juegos de siempre' para la nintendo
-                    DS. Donde se utilizan modelos 3D y físicas.
-                    </p>
-
-                    <p>
-                    Yo me encargué de toda la programación y parte del
-                    diseño con Alvarin.
-                    </p>
-
-                    <p>
-                    Sandra hizo los modelos de los equipos verde,
-                    naranja y amarillo.
-                    </p>
-
-                    <p>
-                    Sergio los de los equipos rosa, azul y rojo.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="pl-transpiler" class="project card">
-        <img src="../resources/projects/missing.png">
-        <div class="project-content">
-            <h2 class="project-title">Transpiler</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">C</span>
-                
-                    <span class="tag">C++</span>
-                
-                    <span class="tag">Bison</span>
-                
-                    <span class="tag">Flex</span>
-                
-            </div>
-            
-                    <p>
-                    Un compilador para un bytecode ficticio. La versión
-                    final fue desarrollada con Bison y Flex. Una primera
-                    versión se hizo a mano sin librerías ni herramientas
-                    externas como ejercicio de aprendizaje.
-                    </p>
-                
-        </div>
-    </article>
-    
-    <article id="learner" class="project card">
-        <img src="../resources/projects/learner.png">
-        <div class="project-content">
-            <h2 class="project-title">Learner</h2>
-            <div class="project-technologies">
-            
-                    <span class="tag">C++</span>
-                
-            </div>
-            
-                    <p>
-                    Una IA hecha desde cero con C++. Con backtracking y
-                    facilidad para añadir nueva funcionalidad.
-                    </p>
-                
-        </div>
-    </article>
-    
-    </div>
-    
-    </section>
-    
-            <footer id="contact">
-                <div id="socials">
-                    <a target="_blank" href="https://www.linkedin.com/in/adrian-ruiz-garcia-050209194/">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="800px" height="800px" viewBox="-5.5 0 32 32" version="1.1">
-            <title>linkedin</title>
-            <path d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"/>
-            </svg>
-        </a>
-                    <a target="_blank" href="https://www.github.com/Flamekasai">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 20 20" version="1.1">
-            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000">
-            <g id="icons" transform="translate(56.000000, 160.000000)">
-            <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path>
-            </g>
-            </g>
-            </g>
-            </svg>
-        </a>
+                <div class="contact-icons">
+                    <a href="https://www.linkedin.com/in/adrian-ruiz-garcia-050209194/" target="_blank"><svg class="icon-linkedin" fill="#000000" width="800px" height="800px" viewBox="-5.5 0 32 32" version="1.1"> <title>linkedin</title> <path d="M0 8.219v15.563c0 1.469 1.156 2.625 2.625 2.625h15.563c0.719 0 1.406-0.344 1.844-0.781 0.469-0.469 0.781-1.063 0.781-1.844v-15.563c0-1.469-1.156-2.625-2.625-2.625h-15.563c-0.781 0-1.375 0.313-1.844 0.781-0.438 0.438-0.781 1.125-0.781 1.844zM2.813 10.281c0-1 0.813-1.875 1.813-1.875 1.031 0 1.875 0.875 1.875 1.875 0 1.031-0.844 1.844-1.875 1.844-1 0-1.813-0.813-1.813-1.844zM7.844 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.656c0.375 0 0.375 0.438 0.375 0.719 0.75-0.75 1.719-0.938 2.719-0.938 2.438 0 4 1.156 4 3.719v6.438c0 0.219-0.188 0.406-0.375 0.406h-2.75c-0.219 0-0.375-0.219-0.375-0.406v-5.813c0-0.969-0.281-1.5-1.375-1.5-1.375 0-1.719 0.906-1.719 2.125v5.188c0 0.219-0.219 0.406-0.438 0.406h-2.719c-0.156 0-0.375-0.219-0.375-0.406zM2.875 23.125v-9.531c0-0.219 0.219-0.406 0.375-0.406h2.719c0.25 0 0.406 0.156 0.406 0.406v9.531c0 0.219-0.188 0.406-0.406 0.406h-2.719c-0.188 0-0.375-0.219-0.375-0.406z"/> </svg></a>
+                    <a href="https://github.com/flamekasai" target="_blank"><svg class="icon-github" width="800px" height="800px" viewBox="-2 -2 24 24" version="1.1"> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path> </g> </g> </g> </svg></a>
+                    <a href="mailto:adrianruizgjj@gmail.com" target="_blank"><svg class="icon-email" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M21 8L17.4392 9.97822C15.454 11.0811 14.4614 11.6326 13.4102 11.8488C12.4798 12.0401 11.5202 12.0401 10.5898 11.8488C9.53864 11.6326 8.54603 11.0811 6.5608 9.97822L3 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                 </div>
-                <a target="_blank" href="mailto:adrianruigjj@gmail.com">adrianruigjj@gmail.com</a>
-                <a target="_blank" href="../resources/curriculum.pdf">curriculum (PDF)</a>
+            </section>
+            <section>
+                <h2>Habilidades y tecnologias</h2>
+                <article id="skills">
+                    
+        <div class="skill-category">
+            <h3>lenguajes</h3>
+            <ul>
+            <li>C</li>
+<li>C++</li>
+<li>Java</li>
+<li>C#</li>
+<li>Python</li>
+<li>GDScript</li>
+<li>Javascript</li>
+<li>Typescript</li>
+<li>PHP</li>
+<li>Racket</li>
+<li>Lisp</li>
+<li>R</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>web</h3>
+            <ul>
+            <li>HTML</li>
+<li>CSS</li>
+<li>Tailwind</li>
+<li>Bootstrap</li>
+<li>SCSS</li>
+<li>NodeJS</li>
+<li>Angular</li>
+<li>Ionic</li>
+<li>React</li>
+<li>Laravel</li>
+<li>.NET</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>Desarrollo de videojuegos</h3>
+            <ul>
+            <li>Unreal engine</li>
+<li>Godot</li>
+<li>Raylib</li>
+<li>SFML</li>
+<li>SDL</li>
+<li>CPCTelera</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>Bases de datos</h3>
+            <ul>
+            <li>SQL</li>
+<li>MongoDB</li>
+<li>Firebase</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>IA</h3>
+            <ul>
+            <li>Keras</li>
+<li>Tensorflow</li>
+<li>PyTorch</li>
+            </ul>
+        </div>
+        
+
+        <div class="skill-category">
+            <h3>otros</h3>
+            <ul>
+            <li>Kafka</li>
+            </ul>
+        </div>
+        
+                </article>
+            </section>
+            <section>
+                <h2>Experiencia laboral</h2>
+                <article id="jobs">
+                    
+        <div class="card job-entry">
+            <span class="time-period"><time>2024</time> &mdash; <time>presente</time></span>
+            <h3>Ingeniero de Software <span class="job-middot">&middot</span> <a href="https://www.nttdata.com/global/en/" target="_blank">NTTData</a></h3>
+            
+                <p>
+                He contribuido en la creación de aplicaciones utilizadas por una
+                gran cantidad de clientes al rededor del mundo en varias
+                plataformas. Dando soporte tanto a PC como smartphones y
+                con integración en la nube permitiendo flujos de trabajo
+                híbridos, permitiendo una gran resiliencia en escenarios de
+                baja conectividad.
+                </p>
+                <p>
+                También desarrolle herramientas internas para la mejora y
+                automatización de tareas habituales.
+                </p>
+                <p>
+                    Contribuciones principales:
+                    <ul>
+                    <li>Desarrollo de interfaces web con las tecnologías más punteras en la industria</li>
+                    <li>Desarrollo de APIs REST</li>
+                    <li>Desarrollo de pruebas automatizadas tanto de regresión como de integración y unitarias</li>
+                    </ul>
+                </p>
+            
+        </div>
+        
+                </article>
+            </section>
+            <section>
+                <h2>Proyectos</h2>
+                <article id="projects">
+                    
+        <div class="card">
+            <h3>Keymaster's Journey</h3>
+            <div class="project-tags">
+                <span class="tag">CPCTelera</span>
+            
+
+                <span class="tag">Z80 Assembly</span>
+            
+
+                <span class="tag">CPCTelera</span>
+            
+
+                <span class="tag">WinAPE</span>
+            
+
+                <span class="tag">Retro Virtual Machine</span>
+            </div>
+            <p>
+                Keymaster's Journey es un juego de puzles para el Amstrad.
+                Desarrollado en ensamblador en su totalidad en un corto periodo
+                de tiempo. Tiene varios entornos en los que el jugador tiene que
+                encontrar la forma de llegar hasta la salida del nivel sin ser
+                atrapado por los enemigos. El realizar un proyecto entero en
+                ensamblador fue realmente enriquecedor y divertido.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Conquista 3D</h3>
+            <div class="project-tags">
+                <span class="tag">Unreal Engine</span>
+            </div>
+            <p>
+                Conquista 3D es un remake creado en Unreal engine del minijuego
+                'conquista' de la colección de juegos '42 juegos de siempre'
+                para la NDS. Alvaro y Yo realizamos toda la programación y el
+                diseño de las nuevas mécanicas y mapas. Sandra y Sergio se
+                encargaron de los modelos.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Compilador desde cero</h3>
+            <div class="project-tags">
+                <span class="tag">C</span>
+            
+
+                <span class="tag">C++</span>
+            
+
+                <span class="tag">Bison</span>
+            
+
+                <span class="tag">Flex</span>
+            </div>
+            <p>
+                Un compilador creado para una maquina virtual propia. Disfruté
+                mucho de la iteración inicial donde se creó todo el 'parser' y
+                'lexer' desde cero. Una versión alternativa se creó con Bison y
+                Flex permitiendome conocer herramientas usadas habitualmente en
+                la industria.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Terminal Battle Royale</h3>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+            
+
+                <span class="tag">Kafka</span>
+            
+
+                <span class="tag">NodeJS</span>
+            
+
+                <span class="tag">SQL</span>
+            </div>
+            <p>
+                <p>
+                Un battle royale de terminal donde los jugadores luchan entre sí
+                para ser el último que queda en pie. Tanto el cliente como el
+                servidor se escribieron en python. Ambos se comunican mediante
+                colas de eventos de Kafka.
+                </p>
+
+                <p>
+                La autenticación y autorizacióñ se gestiona mediante una API
+                REST escrita en javascript utilizando node para el backend.
+                Además el juego consulta APIs climatológicas para simular
+                efectos basados en el clima real.
+                </p>
+
+                <p>
+                Otros jugadores puede ver la partida en directo a traves de una
+                web para espectadores.
+                </p>
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Rolgrama: Un gestor de partidas de rol agnostico</h3>
+            <div class="project-tags">
+                <span class="tag">Ionic</span>
+            
+
+                <span class="tag">Angular</span>
+            
+
+                <span class="tag">Firebase</span>
+            
+
+                <span class="tag">NodeJS</span>
+            </div>
+            <p>
+                D&D (Dungeons & Dragons) es el sistema de rol de mesa más
+                jugado del mundo. Como consecuencia, la mayoría de herramientas
+                digitales se han desarrollado con él en mente pese a que hay
+                muchos otros sistemas con otras fortalezas e ideas interesantes.
+                Rolgrama es un gestor que permite el seguimiento de avances,
+                jugadores y personajes sin estar diseñado con un sistema de
+                reglas concreto. Por tanto le da a los usuarios una buena
+                herramienta para disfrutar de su pasatiempo independientemente
+                del sistema que usen.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>Red social Flamingo</h3>
+            <div class="project-tags">
+                <span class="tag">C#</span>
+            
+
+                <span class="tag">ASP.NET</span>
+            
+
+                <span class="tag">SQL</span>
+            
+
+                <span class="tag">Bootstrap</span>
+            </div>
+            <p>
+                Flamingo es una red social donde puedes compartir publicaciones
+                con texto e imagenes y conectar con amigos. También puede usar
+                <strong>tags</strong> para hacer seguimiento de temas que te
+                resulten de interes. Se desarrolló en un grupo de 5 donde yo
+                hice la mayor parte del frontend, gestión de la base de datos,
+                y autenticación y autorización de usuarios.
+            </p>
+        </div>
+        
+
+        <div class="card">
+            <h3>UAProjects: Herramienta de gestión de proyectos</h3>
+            <div class="project-tags">
+                <span class="tag">PHP</span>
+            
+
+                <span class="tag">Laravel</span>
+            
+
+                <span class="tag">SQL</span>
+            
+
+                <span class="tag">Bootstrap</span>
+            </div>
+            <p>
+                Una herramienta de gestión de proyectos que permite a los
+                usuarios hacer seguimiento de problemas y asignar tareas a
+                colaboradores con diferentes niveles de prioridad. Cuenta
+                con autenticación y autorización de usuarios permitiendo
+                gestionar el acceso a los contenidos a través de roles y
+                perfiles.
+            </p>
+        </div>
+        
+                </article>
+            </section>
+            <footer>
+            <a href="#top">Back to top</a>
             </footer>
         </body>
     </html>
-    
